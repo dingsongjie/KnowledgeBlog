@@ -31,4 +31,5 @@
 
 ## Tools
 
-* [ffmpeg](tools/ffmpeg.md)
+* [ffmpeg](tools/ffmpeg/README.md)
+  * [filters](tools/ffmpeg/filters.md)
