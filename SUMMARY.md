@@ -3,6 +3,7 @@
 ## database
 
 * [mongoDB](README.md)
+  * [Percona mongodb for kubernetes](database/readme/percona-mongodb-for-kubernetes.md)
   * [dump and restore](database/readme/dump-and-restore.md)
   * [useful scripts](database/mongodb/useful-scripts/README.md)
     * [admin scripts](database/mongodb/useful-scripts/admin-scripts.md)
