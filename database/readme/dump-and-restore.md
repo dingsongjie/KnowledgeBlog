@@ -1,6 +1,6 @@
 # dump and restore
 
-#### 下载链接 [https://www.mongodb.com/docs/database-tools/installation/installation/](https://www.mongodb.com/docs/database-tools/installation/installation/)
+#### 工具下载链接 [https://www.mongodb.com/docs/database-tools/installation/installation/](https://www.mongodb.com/docs/database-tools/installation/installation/)
 
 
 
