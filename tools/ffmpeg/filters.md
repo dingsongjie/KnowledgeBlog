@@ -15,7 +15,7 @@ ffmpeg -i inputClip.mp4  noise=alls=20:allf=t+u -vf output.mp4
 #### bit-noise
 
 ```bash
-ffmpeg -i inputClip.mp4 -bsf noise=1000000  output.mp4
+ffmpeg -i 1.mp4 -c copy -bsf noise=10000000  internal.mp4
 ```
 
 #### draw-box
