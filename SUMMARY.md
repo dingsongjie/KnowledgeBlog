@@ -37,3 +37,7 @@
 ## go
 
 * [安装和环境问题](go/an-zhuang-he-huan-jing-wen-ti.md)
+
+## istio
+
+* [性能排查方法](istio/xing-neng-pai-cha-fang-fa.md)
