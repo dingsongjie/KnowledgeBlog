@@ -33,3 +33,7 @@
 
 * [ffmpeg](tools/ffmpeg/README.md)
   * [filters](tools/ffmpeg/filters.md)
+
+## go
+
+* [安装和环境问题](go/an-zhuang-he-huan-jing-wen-ti.md)
