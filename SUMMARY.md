@@ -28,6 +28,8 @@
   * [Dotnet trace](.net/diagnostic/dotnet-trace.md)
   * [Prefview](.net/diagnostic/prefview.md)
   * [Dotnet dump](.net/diagnostic/dotnet-dump.md)
+* [Json Serialization](.net/json-serialization/README.md)
+  * [JsonNode.Parse(ref reader) create large byte\[\] object in .NET6](.net/json-serialization/jsonnode.parse-ref-reader-create-large-byte-object-in-.net6.md)
 
 ## Tools
 
