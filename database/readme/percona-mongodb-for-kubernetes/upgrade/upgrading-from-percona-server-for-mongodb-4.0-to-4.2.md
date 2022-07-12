@@ -6,4 +6,9 @@
 
 #### Mongodb
 
-[https://docs.percona.com/percona-server-for-mongodb/4.2/install/upgrade-from-40.html](https://docs.percona.com/percona-server-for-mongodb/4.2/install/upgrade-from-40.html)
+{% embed url="https://docs.percona.com/percona-server-for-mongodb/4.2/install/upgrade-from-40.html" %}
+
+## Compatibility Changes in MongoDB 4.2
+
+{% embed url="https://www.mongodb.com/docs/manual/release-notes/4.2-compatibility/" %}
+
