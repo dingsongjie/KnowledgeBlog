@@ -3,7 +3,9 @@
 ## database
 
 * [mongoDB](README.md)
-  * [Percona mongodb for kubernetes](database/readme/percona-mongodb-for-kubernetes.md)
+  * [Percona mongodb for kubernetes](database/readme/percona-mongodb-for-kubernetes/README.md)
+    * [Upgrade](database/readme/percona-mongodb-for-kubernetes/upgrade/README.md)
+      * [Upgrading from Percona Server for MongoDB 4.0 to 4.2](database/readme/percona-mongodb-for-kubernetes/upgrade/upgrading-from-percona-server-for-mongodb-4.0-to-4.2.md)
   * [dump and restore](database/readme/dump-and-restore.md)
   * [useful scripts](database/mongodb/useful-scripts/README.md)
     * [admin scripts](database/mongodb/useful-scripts/admin-scripts.md)
