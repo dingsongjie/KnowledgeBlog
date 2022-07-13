@@ -15,6 +15,7 @@
 * [kubectl](kubernetes/kubectl.md)
 * [components](kubernetes/components/README.md)
   * [kube-proxy](kubernetes/components/kube-proxy.md)
+* [Metrics](kubernetes/metrics.md)
 
 ## Linux
 
