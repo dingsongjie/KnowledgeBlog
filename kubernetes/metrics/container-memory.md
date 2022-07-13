@@ -8,6 +8,8 @@ container_working_set_in_bytes = container_memory_usage_bytes - total_inactive_f
 
 kubectl top 中内存用的是 container\_memory\_usage\_bytes ,oomkill 也是 看 container\_memory\_usage\_bytes 指标
 
+这个是 Prometheus 适配器的指标来源配置
+
 ```json
 apiVersion: v1
 data:
