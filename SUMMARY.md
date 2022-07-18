@@ -9,6 +9,8 @@
   * [dump and restore](database/readme/dump-and-restore.md)
   * [useful scripts](database/mongodb/useful-scripts/README.md)
     * [admin scripts](database/mongodb/useful-scripts/admin-scripts.md)
+  * [Performance](database/readme/performance/README.md)
+    * [$lookup](database/readme/performance/usdlookup.md)
 
 ## kubernetes
 
