@@ -12,15 +12,8 @@ dotnet tool install --global dotnet-stack \
 #### Collect
 
 ```bash
-dotnet-stack report  --process-id 1 -n DiagnosticScenarios
+dotnet-stack report  --process-id 1 
 ```
 
 
 
-#### Analyze
-
-```bash
- dotnet-dump analyze  core1
-```
-
-analyze 里名的命令通过 help 查找 使用方式，help, help command
