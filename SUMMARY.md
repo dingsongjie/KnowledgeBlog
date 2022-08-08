@@ -25,8 +25,7 @@
 * [iptables](linux/iptables/README.md)
   * [tables](linux/iptables/tables.md)
 * [常用命令](linux/chang-yong-ming-ling.md)
-* [磁盘相关](linux/ci-pan-xiang-guan/README.md)
-  * [xfs 磁盘操作](linux/ci-pan-xiang-guan/xfs-ci-pan-cao-zuo.md)
+* [磁盘相关（centos7）](linux/ci-pan-xiang-guan-centos7.md)
 
 ## .net
 
