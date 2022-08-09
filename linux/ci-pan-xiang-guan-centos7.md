@@ -9,14 +9,14 @@
 
 ### LVM
 
-* **pvcreate**
-* **pvdisplay**
-* **vgcreate**
-* **vgdisplay**
-* **vgextend**
-* **lvcreate**
-* **lvdisplay**
-* **lvextend -l** +100%FREE
+* 创建pv  **pvcreate**
+* 显示pv **pvdisplay**
+* 创建vg **vgcreate**
+* 显示vg **vgdisplay**
+* vg扩容 **vgextend**
+* 创建逻辑卷 **lvcreate**
+* 显示逻辑卷 **lvdisplay**
+* 逻辑卷扩容 **lvextend -l** +100%FREE
 
 ### XFS
 

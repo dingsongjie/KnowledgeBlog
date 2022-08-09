@@ -1,6 +1,6 @@
 # Upgrading from Percona Server for MongoDB 4.0 to 4.2
 
-#### Mongodb operator
+#### With mongodb operator
 
 {% embed url="https://www.percona.com/doc/kubernetes-operator-for-psmongodb/update.html#percona-server-for-mongodb-major-version-upgrades" %}
 
