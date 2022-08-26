@@ -51,3 +51,7 @@
 ## istio
 
 * [性能排查方法](istio/xing-neng-pai-cha-fang-fa.md)
+
+## Python
+
+* [安装](python/an-zhuang.md)
