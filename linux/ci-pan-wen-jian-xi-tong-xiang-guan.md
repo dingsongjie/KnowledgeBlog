@@ -1,6 +1,22 @@
-# 磁盘相关
+# 磁盘-文件系统相关
 
 
+
+### df&#x20;
+
+查看文件系统和磁盘的使用
+
+### du&#x20;
+
+查看磁盘空间
+
+### fdisk
+
+磁盘分区
+
+\#
+
+### fdisk
 
 ### 分区
 
@@ -9,7 +25,7 @@
 
 ### LVM
 
-* 创建pv  **pvcreate**
+* 创建pv  **pvcreate**&#x20;
 * 显示pv **pvdisplay**
 * 创建vg **vgcreate**
 * 显示vg **vgdisplay**
