@@ -12,8 +12,6 @@
   * [Performance](database/readme/performance/README.md)
     * [$lookup](database/readme/performance/usdlookup.md)
 
-## kubernetes
-
 ## Linux
 
 * [iptables](linux/iptables/README.md)
@@ -46,10 +44,10 @@
 ## Cloud Native
 
 * [Istio](cloud-native/istio/README.md)
-  * [性能排查方法](cloud-native/istio/xing-neng-pai-cha-fang-fa.md)
+  * [性能排查方法](istio/xing-neng-pai-cha-fang-fa.md)
 * [Kubernetes](cloud-native/kubernetes/README.md)
-  * [kubectl](cloud-native/kubernetes/kubectl.md)
-  * [components](cloud-native/kubernetes/components/README.md)
-    * [kube-proxy](cloud-native/kubernetes/components/kube-proxy.md)
-  * [Metrics](cloud-native/kubernetes/metrics/README.md)
-    * [Container memory](cloud-native/kubernetes/metrics/container-memory.md)
+  * [kubectl](kubernetes/kubectl.md)
+  * [components](kubernetes/components/README.md)
+    * [kube-proxy](kubernetes/components/kube-proxy.md)
+  * [Metrics](kubernetes/metrics/README.md)
+    * [Container memory](kubernetes/metrics/container-memory.md)
