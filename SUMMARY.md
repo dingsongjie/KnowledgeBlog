@@ -29,24 +29,12 @@
 
 ## .net
 
-* [Diagnostic](.net/diagnostic/README.md)
-  * [Tools in container](.net/diagnostic/tools-in-container.md)
-  * [Dotnet counter](.net/diagnostic/dotnet-counter.md)
-  * [Dotnet trace](.net/diagnostic/dotnet-trace.md)
-  * [Prefview](.net/diagnostic/prefview.md)
-  * [Dotnet dump](.net/diagnostic/dotnet-dump.md)
-  * [Dotnet stack](.net/diagnostic/dotnet-stack.md)
-* [Json Serialization](.net/json-serialization/README.md)
-  * [JsonNode.Parse(ref reader) create large byte\[\] object in .NET6](.net/json-serialization/jsonnode.parse-ref-reader-create-large-byte-object-in-.net6.md)
-
 ## Tools
 
 * [ffmpeg](tools/ffmpeg/README.md)
   * [filters](tools/ffmpeg/filters.md)
 
 ## go
-
-* [安装和环境问题](go/an-zhuang-he-huan-jing-wen-ti.md)
 
 ## istio
 
@@ -56,5 +44,17 @@
 
 ## Dev Platform
 
+* [Golang](dev-platform/golang/README.md)
+  * [安装和环境问题](dev-platform/golang/an-zhuang-he-huan-jing-wen-ti.md)
+* [.Net](dev-platform/.net/README.md)
+  * [Diagnostic](dev-platform/.net/diagnostic/README.md)
+    * [Tools in container](dev-platform/.net/diagnostic/tools-in-container.md)
+    * [Dotnet counter](dev-platform/.net/diagnostic/dotnet-counter.md)
+    * [Dotnet trace](dev-platform/.net/diagnostic/dotnet-trace.md)
+    * [Prefview](dev-platform/.net/diagnostic/prefview.md)
+    * [Dotnet dump](dev-platform/.net/diagnostic/dotnet-dump.md)
+    * [Dotnet stack](dev-platform/.net/diagnostic/dotnet-stack.md)
+  * [Json Serialization](dev-platform/.net/json-serialization/README.md)
+    * [JsonNode.Parse(ref reader) create large byte\[\] object in .NET6](dev-platform/.net/json-serialization/jsonnode.parse-ref-reader-create-large-byte-object-in-.net6.md)
 * [Python](dev-platform/python/README.md)
-  * [安装](dev-platform/python/an-zhuang.md)
+  * [安装](python/an-zhuang.md)
