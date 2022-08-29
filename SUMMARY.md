@@ -54,8 +54,7 @@
 
 ## Python
 
-* [安装](python/an-zhuang.md)
-
 ## Dev Platform
 
-* [Python](dev-platform/python.md)
+* [Python](dev-platform/python/README.md)
+  * [安装](dev-platform/python/an-zhuang.md)
