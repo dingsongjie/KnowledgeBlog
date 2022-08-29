@@ -58,4 +58,4 @@
 
 ## Dev Platform
 
-* [Page 1](dev-platform/page-1.md)
+* [Python](dev-platform/python.md)
