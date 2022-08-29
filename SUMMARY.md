@@ -55,3 +55,7 @@
 ## Python
 
 * [安装](python/an-zhuang.md)
+
+## Dev Platform
+
+* [Page 1](dev-platform/page-1.md)
