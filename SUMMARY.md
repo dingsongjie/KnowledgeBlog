@@ -11,8 +11,6 @@
     * [admin scripts](database/mongodb/useful-scripts/admin-scripts.md)
   * [Performance](database/readme/performance/README.md)
     * [$lookup](database/readme/performance/usdlookup.md)
-* [sql server](database/sql-server/README.md)
-  * [always on](database/sql-server/always-on.md)
 
 ## kubernetes
 
