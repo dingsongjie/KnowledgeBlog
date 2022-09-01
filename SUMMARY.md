@@ -21,6 +21,8 @@
 
 ## Tools
 
+* [autossh](tools/autossh.md)
+* [Lsyncd](tools/lsyncd.md)
 * [ffmpeg](tools/ffmpeg/README.md)
   * [filters](tools/ffmpeg/filters.md)
 
