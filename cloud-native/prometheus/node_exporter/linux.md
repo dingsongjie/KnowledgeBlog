@@ -42,6 +42,8 @@ mv node_exporter-1.3.1.linux-amd64  node_exporter
 vi /etc/init.d/node_exporter
 
 #!/bin/bash
+#chkconfig: 2345 80 90
+#description:Prometheus node exporter
 #
 # /etc/rc.d/init.d/node_exporter
 #
@@ -103,6 +105,12 @@ esac
 chmod +x /etc/init.d/node_exporter
 
 service node_exporter start
+
+chkconfig --add /etc/init.d/node_exporter
+
+chkconfig node_exporter on
+
+
 
 iptables -I INPUT -p tcp --dport 9100 -j ACCEPT
 service iptables save
