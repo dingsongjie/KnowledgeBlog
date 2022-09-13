@@ -27,5 +27,82 @@ WantedBy=multi-user.target
 EOF
 ```
 
+### Centos6上安装并生成服务
 
 
+
+```
+curl -sS node_exporter-1.3.1.linux-amd64.tar.gz  https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz 
+
+tar -zxvf node_exporter-1.3.1.linux-amd64.tar.gz
+mv node_exporter-1.3.1.linux-amd64.tar.gz  node_exporter
+
+
+cat > /etc/init.d/node_exporter<<EOF
+#!/bin/bash
+#
+# /etc/rc.d/init.d/node_exporter
+#
+#  Prometheus node exporter
+#
+#  description: Prometheus node exporter
+#  processname: node_exporter
+
+# Source function library.
+. /etc/rc.d/init.d/functions
+
+PROGNAME=node_exporter
+PROG=/opt/node_exporter/$PROGNAME
+USER=root
+LOGFILE=/var/log/prometheus.log
+LOCKFILE=/var/run/$PROGNAME.pid
+
+start() {
+    echo -n "Starting $PROGNAME: "
+    cd /opt/node_exporter/
+    daemon --user $USER --pidfile="$LOCKFILE" "$PROG &>$LOGFILE &"
+    echo $(pidofproc $PROGNAME) >$LOCKFILE
+    echo
+}
+
+stop() {
+    echo -n "Shutting down $PROGNAME: "
+    killproc $PROGNAME
+    rm -f $LOCKFILE
+    echo
+}
+
+
+case "$1" in
+    start)
+    start
+    ;;
+    stop)
+    stop
+    ;;
+    status)
+    status $PROGNAME
+    ;;
+    restart)
+    stop
+    start
+    ;;
+    reload)
+    echo "Sending SIGHUP to $PROGNAME"
+    kill -SIGHUP $(pidofproc $PROGNAME)#!/bin/bash
+    ;;
+    *)
+        echo "Usage: service node_exporter {start|stop|status|reload|restart}"
+        exit 1
+    ;;
+esac
+EOF
+
+
+chmod +x /etc/init.d/node_exporter
+
+service node_exporter start
+
+iptables -I INPUT -p tcp --dport 9100 -j ACCEPT
+service iptables save
+```
