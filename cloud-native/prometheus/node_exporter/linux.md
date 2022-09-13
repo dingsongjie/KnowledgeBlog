@@ -13,7 +13,7 @@ curl -Lo /etc/yum.repos.d/_copr_ibotty-prometheus-exporters.repo https://copr.fe
 yum install node_exporter
 
 
-cat < /etc/systemd/system/node_exporter.service<<EOF
+cat > /etc/systemd/system/node_exporter.service<<EOF
 [Unit] 
 Description=Node Exporter 
 After=network.target
