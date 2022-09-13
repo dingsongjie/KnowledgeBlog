@@ -125,7 +125,6 @@ tar -zxvf node_exporter-1.3.1.linux-amd64.tar.gz
 mv node_exporter-1.3.1.linux-amd64  node_exporter
 cd node_exporter
 ln node_exporter /usr/local/bin/node_exporter 
-cp node_exporter /usr/local/bin
 
 cat > /etc/systemd/system/node_exporter.service <<EOF
 [Unit]
