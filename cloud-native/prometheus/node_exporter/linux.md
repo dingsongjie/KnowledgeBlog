@@ -115,3 +115,30 @@ chkconfig node_exporter on
 iptables -I INPUT -p tcp --dport 9100 -j ACCEPT
 service iptables save
 ```
+
+### Ubuntu 安装并生成服务
+
+```bash
+cd /opt
+curl -OL https://github.com/prometheus/node_exporter/releases/download/v1.3.1/node_exporter-1.3.1.linux-amd64.tar.gz
+tar -zxvf node_exporter-1.3.1.linux-amd64.tar.gz
+mv node_exporter-1.3.1.linux-amd64  node_exporter
+cp node_exporter /usr/local/bin
+
+cat > /etc/systemd/system/node_exporter.service <<EOF
+[Unit]
+Description=Node Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/node_exporter
+
+[Install]
+WantedBy=multi-user.target
+EOF
+
+```
