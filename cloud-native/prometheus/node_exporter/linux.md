@@ -13,7 +13,7 @@ curl -Lo /etc/yum.repos.d/_copr_ibotty-prometheus-exporters.repo https://copr.fe
 yum install node_exporter
 
 
-cat > /etc/systemd/system/node_exporter.service<<EOF
+vi /etc/systemd/system/node_exporter.service<<EOF
 [Unit] 
 Description=Node Exporter 
 After=network.target
@@ -39,7 +39,8 @@ tar -zxvf node_exporter-1.3.1.linux-amd64.tar.gz
 mv node_exporter-1.3.1.linux-amd64  node_exporter
 
 
-cat > /etc/init.d/node_exporter<<EOF
+vi /etc/init.d/node_exporter
+
 #!/bin/bash
 #
 # /etc/rc.d/init.d/node_exporter
@@ -53,28 +54,28 @@ cat > /etc/init.d/node_exporter<<EOF
 . /etc/rc.d/init.d/functions
 
 PROGNAME=node_exporter
-PROG=/opt/node_exporter//$PROGNAME
+PROG=/opt/node_exporter/$PROGNAME
 USER=root
 LOGFILE=/var/log/prometheus.log
-LOCKFILE=/var/run//$PROGNAME.pid
+LOCKFILE=/var/run/$PROGNAME.pid
 
 start() {
     echo -n "Starting $PROGNAME: "
     cd /opt/node_exporter/
-    daemon --user /$USER --pidfile="/$LOCKFILE" "/$PROG &>/$LOGFILE &"
-    echo /$(pidofproc /$PROGNAME) >/$LOCKFILE
+    daemon --user $USER --pidfile="$LOCKFILE" "$PROG &>$LOGFILE &"
+    echo $(pidofproc $PROGNAME) >$LOCKFILE
     echo
 }
 
 stop() {
-    echo -n "Shutting down /$PROGNAME: "
-    killproc /$PROGNAME
-    rm -f /$LOCKFILE
+    echo -n "Shutting down $PROGNAME: "
+    killproc $PROGNAME
+    rm -f $LOCKFILE
     echo
 }
 
 
-case "/$1" in
+case "$1" in
     start)
     start
     ;;
@@ -82,22 +83,21 @@ case "/$1" in
     stop
     ;;
     status)
-    status /$PROGNAME
+    status $PROGNAME
     ;;
     restart)
     stop
     start
     ;;
     reload)
-    echo "Sending SIGHUP to /$PROGNAME"
-    kill -SIGHUP /$(pidofproc /$PROGNAME)#!/bin/bash
+    echo "Sending SIGHUP to $PROGNAME"
+    kill -SIGHUP $(pidofproc $PROGNAME)#!/bin/bash
     ;;
     *)
         echo "Usage: service node_exporter {start|stop|status|reload|restart}"
         exit 1
     ;;
 esac
-EOF
 
 
 chmod +x /etc/init.d/node_exporter
