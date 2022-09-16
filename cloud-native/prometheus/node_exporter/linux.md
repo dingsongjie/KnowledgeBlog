@@ -25,6 +25,8 @@ ExecStart=/usr/sbin/node_exporter
 [Install] 
 WantedBy=multi-user.target 
 EOF
+
+firewall-cmd --zone=public --add-port=9100/tcp --permanent
 ```
 
 ### Centos6上安装并生成服务
