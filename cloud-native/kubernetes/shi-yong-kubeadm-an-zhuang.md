@@ -91,6 +91,16 @@ EOF
 sudo sysctl --system
 ```
 
+*   如果需要 创建 system.slice
+
+    ```bash
+    mkdir -p /sys/fs/cgroup/hugetlb/system.slice
+    mkdir -p /sys/fs/cgroup/cpuset/system.slice
+    mkdir -p /sys/fs/cgroup/systemd/system.slice
+    systemctl restart kubelet
+    ```
+
+
 * 安装 kubeadm kubelet kubectl
 
 ```bash
