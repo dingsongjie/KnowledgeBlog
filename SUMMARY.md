@@ -58,3 +58,4 @@
   * [Metrics](kubernetes/metrics/README.md)
     * [Container memory](kubernetes/metrics/container-memory.md)
   * [使用Kubeadm安装](cloud-native/kubernetes/shi-yong-kubeadm-an-zhuang.md)
+  * [etcd](cloud-native/kubernetes/etcd.md)
