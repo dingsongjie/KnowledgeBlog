@@ -97,7 +97,6 @@ sudo sysctl --system
     mkdir -p /sys/fs/cgroup/hugetlb/system.slice
     mkdir -p /sys/fs/cgroup/cpuset/system.slice
     mkdir -p /sys/fs/cgroup/systemd/system.slice
-    systemctl restart kubelet
     ```
 
 
