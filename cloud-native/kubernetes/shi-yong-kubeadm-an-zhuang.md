@@ -195,4 +195,54 @@ vrrp_instance VI_1 {
 
 ```bash
 systemctl enable --now keepalived
+
+
+```
+
+* 为了让kube-api 可以负载均很，加了nginx ,注意初始化control plane 的时候 绑定的端口换成16443
+
+```bash
+cat > /etc/nginx/nginx.conf <<EOF
+user nginx;
+worker_processes auto;
+error_log /var/log/nginx/error.log;
+pid /run/nginx.pid;
+
+# Load dynamic modules. See /usr/share/doc/nginx/README.dynamic.
+include /usr/share/nginx/modules/*.conf;
+
+
+
+events {
+    use epoll;
+    worker_connections  10000;
+}
+
+stream {
+    log_format proxy 'CLIENT=$remote_addr [$time_local] '
+                 'PROTO=$protocol SENT=$bytes_sent RECV=$bytes_received '
+                 'TIME=$session_time RS="$upstream_addr" '
+                 'RS_SENT="$upstream_bytes_sent" RS_RECV="$upstream_bytes_received" RS_TIME="$upstream_connect_time"';
+
+    access_log /var/log/nginx/access.log proxy;
+
+
+    upstream apiservers {
+        zone upstream_apiservers 64k;
+        hash $remote_addr consistent;
+
+        server ENDPOINT1:16443 max_fails=1 fail_timeout=3s;
+        server ENDPOINT2:16443 max_fails=1 fail_timeout=3s;
+        server ENDPOINT3:16443 max_fails=1 fail_timeout=3s;
+    }
+
+
+    server {
+        listen 6443;
+        proxy_connect_timeout 1s;
+#        proxy_timeout 30s; # will block kubectl --watch
+        proxy_pass apiservers;
+    }
+
+}
 ```
