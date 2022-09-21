@@ -2,8 +2,6 @@
 
 ### Centos7
 
-#### 所有节点
-
 * 修改节点Hostname
 
 ```bash
