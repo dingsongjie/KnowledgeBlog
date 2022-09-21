@@ -131,3 +131,68 @@ kubeadm token create --print-join-command
 ```bash
 kubeadm init phase upload-certs --upload-certs
 ```
+
+* keepalived 安装
+
+```bash
+yum install keepalived -y
+```
+
+* 添加 check\_k8s.sh
+
+```bash
+cat > /etc/keepalived/check_k8s.sh <<EOF
+#!/bin/bash
+
+nc -w 1 -vz 127.0.0.1 6443
+EOF
+chmod +x /etc/keepalived/check_k8s.sh
+```
+
+* keepalived.conf 编写
+
+```bash
+cat > /etc/keepalived/keepalived.conf <<EOF
+vrrp_script check_k8s_alive {
+        script "/etc/keepalived/check_k8s.sh"
+        interval 1
+        rise 2
+        fall 2
+}
+
+
+global_defs {
+        router_id LVS_K8S
+        vrrp_skip_check_adv_addr
+        script_user root
+        enable_script_security
+        vrrp_garp_interval 0
+        vrrp_gna_interval 0
+}
+
+vrrp_instance VI_1 {
+        state BACKUP
+        interface [interface]
+        virtual_router_id 110
+        priority 100
+        advert_int 1
+        nopreempt
+        authentication {
+                auth_type PASS
+                auth_pass 1111
+        }
+        virtual_ipaddress {
+                vip1 
+        }
+
+        track_script {
+                check_k8s_alive weight 10
+        }
+}
+```
+
+* 开启启动keepalived并立即启动
+
+```bash
+systemctl enable --now keepalived
+```
