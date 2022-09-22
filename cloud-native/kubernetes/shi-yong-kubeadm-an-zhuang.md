@@ -197,7 +197,7 @@ systemctl enable --now keepalived
 
 ```
 
-* 为了让kube-api 可以负载均很，加了nginx ,注意初始化control plane 的时候 绑定的端口换成16443
+* 为了让kube-api 可以负载均衡，加了nginx ,注意初始化control plane 的时候 绑定的端口换成16443
 
 ```bash
 cat > /etc/nginx/nginx.conf <<EOF
