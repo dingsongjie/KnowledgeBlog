@@ -21,6 +21,7 @@
 ### 分区
 
 * 分区扩容 **parted \[dev]**
+* **分区扩容** growpart \[dev] \[parteNumber]
 * 分区更新 **partprobe**
 
 ### LVM
