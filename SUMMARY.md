@@ -11,7 +11,8 @@
     * [admin scripts](database/mongodb/useful-scripts/admin-scripts.md)
   * [Performance](database/readme/performance/README.md)
     * [$lookup](database/readme/performance/usdlookup.md)
-* [SqlServer](database/sqlserver.md)
+* [SqlServer](database/sqlserver/README.md)
+  * [Scripts](database/sqlserver/scripts.md)
 
 ## Linux
 
