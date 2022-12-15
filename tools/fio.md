@@ -30,3 +30,9 @@ fio --name=read_throughput --directory=$TEST_DIR --numjobs=16 \--size=10G --time
 ```bash
 fio --name=read_iops --directory=$TEST_DIR --size=10G \--time_based --runtime=60s --ramp_time=2s --ioengine=libaio --direct=1 \--verify=0 --bs=4K --iodepth=256 --rw=randread --group_reporting=1
 ```
+
+### 清理
+
+```bash
+rm $TEST_DIR/write* $TEST_DIR/read*
+```
