@@ -24,6 +24,7 @@
 
 ## Tools
 
+* [fio](tools/fio.md)
 * [iscsiadm](tools/iscsiadm.md)
 * [autossh](tools/autossh.md)
 * [Lsyncd](tools/lsyncd.md)
