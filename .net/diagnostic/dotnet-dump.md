@@ -2,6 +2,16 @@
 
 
 
+#### Collect dumps on crash <a href="#collect-dumps-on-crash" id="collect-dumps-on-crash"></a>
+
+<pre class="language-bash"><code class="lang-bash">export COMPlus_DbgEnableMiniDump 1
+export COMPlus_DbgMiniDumpType 4 
+
+<strong># .net 7 
+</strong>export DOTNET_DbgEnableMiniDump 1
+export DOTNET_DbgEnableMiniDump 4 
+</code></pre>
+
 #### Dotnet dump
 
 ```bash
