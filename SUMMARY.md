@@ -1,8 +1,12 @@
 # Table of contents
 
+* [MQ](README.md)
+  * [rabbitmq](mq/rabbitmq/README.md)
+    * [常用脚本](mq/rabbitmq/chang-yong-jiao-ben.md)
+
 ## database
 
-* [mongoDB](README.md)
+* [mongoDB](<README (1).md>)
   * [Percona mongodb for kubernetes](database/readme/percona-mongodb-for-kubernetes.md)
     * [Upgrade](database/readme/percona-mongodb-for-kubernetes/upgrade/README.md)
       * [Upgrading from Percona Server for MongoDB 4.0 to 4.2](database/readme/percona-mongodb-for-kubernetes/upgrade/upgrading-from-percona-server-for-mongodb-4.0-to-4.2.md)
@@ -13,7 +17,7 @@
     * [$lookup](database/readme/performance/usdlookup.md)
 * [SqlServer](database/sqlserver/README.md)
   * [Scripts](database/sqlserver/scripts.md)
-* [elasticsearch](database/elasticsearch/README.md)
+* [elasticsearch](database/elasticsearch.md)
   * [常用请求](database/elasticsearch/chang-yong-qing-qiu.md)
 
 ## Linux
