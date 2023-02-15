@@ -13,7 +13,8 @@
     * [$lookup](database/readme/performance/usdlookup.md)
 * [SqlServer](database/sqlserver/README.md)
   * [Scripts](database/sqlserver/scripts.md)
-* [elasticsearch](database/elasticsearch.md)
+* [elasticsearch](database/elasticsearch/README.md)
+  * [常用请求](database/elasticsearch/chang-yong-qing-qiu.md)
 
 ## Linux
 
