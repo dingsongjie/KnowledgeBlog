@@ -39,12 +39,9 @@ activate
 deactivate 
 ```
 
-### 临时跟换-第三方包清华大学镜像地址
+### 设置默认包地址为清华大学镜像地址
 
 ```bash
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
-### 永久更换pip镜像地址为清华大学
-
-\`\`\`
