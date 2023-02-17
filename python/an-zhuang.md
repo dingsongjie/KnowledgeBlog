@@ -39,7 +39,7 @@ activate
 deactivate 
 ```
 
-### 第三方包清华大学镜像地址
+### 临时跟换-第三方包清华大学镜像地址
 
 ```bash
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
