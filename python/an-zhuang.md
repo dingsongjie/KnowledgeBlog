@@ -30,7 +30,7 @@ virtualenv <envname>
 ### 激活当前目录的虚拟环境
 
 ```bash
-activate
+./Scripts/activate
 ```
 
 ### 退出虚拟环境
