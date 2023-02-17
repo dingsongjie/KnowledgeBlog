@@ -44,3 +44,7 @@ deactivate
 ```bash
 pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 ```
+
+### 永久更换pip镜像地址为清华大学
+
+\`\`\`
