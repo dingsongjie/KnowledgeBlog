@@ -25,6 +25,8 @@ pip3 install virtualenv
 ```bash
 virtualenv <envname>
 
+python -m venv  <envname>
+
 ```
 
 ### 激活当前目录的虚拟环境
