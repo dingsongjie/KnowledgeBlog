@@ -47,3 +47,12 @@ deactivate
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
+### pip 生成requirements
+
+```bash
+pip freeze > ./requirements.txt 
+```
+
+### pip 根据清单安装
+
+pip install -r ./requirements.txt
