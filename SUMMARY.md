@@ -6,7 +6,7 @@
 
 ## database
 
-* [mongoDB](README.md)
+* [mongoDB](<README (1).md>)
   * [Percona mongodb for kubernetes](database/readme/percona-mongodb-for-kubernetes.md)
     * [Upgrade](database/readme/percona-mongodb-for-kubernetes/upgrade/README.md)
       * [Upgrading from Percona Server for MongoDB 4.0 to 4.2](database/readme/percona-mongodb-for-kubernetes/upgrade/upgrading-from-percona-server-for-mongodb-4.0-to-4.2.md)
@@ -30,6 +30,8 @@
 * [磁盘-文件系统相关](linux/ci-pan-xiang-guan.md)
 * [route](linux/route.md)
 * [ip](linux/ip.md)
+* [双网卡，跨网段配置](linux/shuang-wang-ka-kua-wang-duan-pei-zhi.md)
+* [常见问题](linux/chang-jian-wen-ti.md)
 
 ## Tools
 
