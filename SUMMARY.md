@@ -31,7 +31,8 @@
 * [route](linux/route.md)
 * [ip](linux/ip.md)
 * [双网卡，跨网段配置](linux/shuang-wang-ka-kua-wang-duan-pei-zhi.md)
-* [常见问题](linux/chang-jian-wen-ti.md)
+* [常见问题](linux/chang-jian-wen-ti/README.md)
+  * [开机自动执行命令](linux/chang-jian-wen-ti/kai-ji-zi-dong-zhi-hang-ming-ling.md)
 
 ## Tools
 
