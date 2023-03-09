@@ -1,9 +1,30 @@
 # 常用脚本
 
+### 创建数据库
+
+```bash
+createdb <选项> <数据库名>
+```
+
 ### 登陆
 
 ```bash
 psql -U <username> -W  <dbname>
+
+```
+
+### 创建用户
+
+```sql
+CREATE USER <用户名> [WITH PASSWORD '<密码>'];
+
+
+```
+
+### 赋予用户权限
+
+```sql
+GRANT <ALL PRIVILEGES,SELECT> ON DATABASE <mydatabase> TO <myuser>;
 ```
 
 ### 查看所有的数据库
