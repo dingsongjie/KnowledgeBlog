@@ -6,7 +6,7 @@
 
 ## database
 
-* [mongoDB](README.md)
+* [mongoDB](<README (1).md>)
   * [Percona mongodb for kubernetes](database/readme/percona-mongodb-for-kubernetes.md)
     * [Upgrade](database/readme/percona-mongodb-for-kubernetes/upgrade/README.md)
       * [Upgrading from Percona Server for MongoDB 4.0 to 4.2](database/readme/percona-mongodb-for-kubernetes/upgrade/upgrading-from-percona-server-for-mongodb-4.0-to-4.2.md)
@@ -23,6 +23,7 @@
   * [文件损坏恢复](database/mysql/wen-jian-sun-huai-hui-fu.md)
 * [postgres](database/postgres/README.md)
   * [常用脚本](database/postgres/chang-yong-jiao-ben.md)
+* [weaviate](database/weaviate.md)
 
 ## Linux
 
