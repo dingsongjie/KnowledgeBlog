@@ -47,8 +47,7 @@
 
 **文件系统检查**
 
-* 修复磁盘  ****  fsck -f-y devName
+* 修复磁盘  fsck -f-y devName
 
 
 
-****
