@@ -21,6 +21,7 @@
   * [常用请求](database/elasticsearch/chang-yong-qing-qiu.md)
 * [mysql](database/mysql/README.md)
   * [文件损坏恢复](database/mysql/wen-jian-sun-huai-hui-fu.md)
+  * [常用脚本](database/mysql/chang-yong-jiao-ben.md)
 * [postgres](database/postgres/README.md)
   * [常用脚本](database/postgres/chang-yong-jiao-ben.md)
 * [weaviate](database/weaviate.md)
