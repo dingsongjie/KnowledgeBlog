@@ -23,3 +23,16 @@ WHERE
 ```sql
 SHOW TABLE STATUS
 ```
+
+### 优化表空间和索引等碎片
+
+```sql
+OPTIMIZE TABLE <table_name>
+
+```
+
+### 直接清楚表里的所有数据并压缩表空间
+
+```sql
+TRUNCATE TABLE <table_name>
+```
