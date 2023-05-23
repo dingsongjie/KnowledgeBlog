@@ -41,6 +41,7 @@
 
 ## Tools
 
+* [hping3](tools/hping3.md)
 * [fio](tools/fio.md)
 * [iscsiadm](tools/iscsiadm.md)
 * [autossh](tools/autossh.md)
