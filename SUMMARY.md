@@ -49,6 +49,7 @@
 * [ffmpeg](tools/ffmpeg/README.md)
   * [filters](tools/ffmpeg/filters.md)
 * [tcpdump](tools/tcpdump.md)
+* [nmap](tools/nmap.md)
 
 ## Dev Platform
 
