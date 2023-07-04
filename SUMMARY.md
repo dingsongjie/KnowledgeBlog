@@ -55,6 +55,7 @@
 
 * [Golang](dev-platform/golang/README.md)
   * [安装和环境问题](go/an-zhuang-he-huan-jing-wen-ti.md)
+  * [知识图谱](dev-platform/golang/zhi-shi-tu-pu.md)
 * [.Net](dev-platform/.net/README.md)
   * [Diagnostic](.net/diagnostic/README.md)
     * [Tools in container](.net/diagnostic/tools-in-container.md)
